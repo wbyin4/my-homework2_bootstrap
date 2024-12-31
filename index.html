@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chonburi Travel Guide</title>
+    <title>Chonburi TravelGuide</title>
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Chonburi Travel Guide</a>
+            <a class="navbar-brand" href="#">Chonburi TravelGuide</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,27 +29,29 @@
             </div>
         </div>
     </nav>
+
+    <!-- Hero Section -->
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/image1.jpg" class="d-block w-100" alt="Beach">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="images/chon.jpg" class="d-block w-100" alt="Beach" style="height: 370px; object-fit: cover;">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center" style="top: 0; bottom: 0;">
                     <h5>Welcome to Chonburi</h5>
-                    <p>Explore the beauty of the seaside province.</p>
+                    <p>สำรวจความงามอันงดงามของจังหวัดริมทะเลแห่งนี้ที่เต็มไปด้วยเสน่ห์และธรรมชาติที่ยากจะลืมเลือน</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/image2.jpg" class="d-block w-100" alt="Market">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Vibrant Markets</h5>
-                    <p>Discover local culture and food.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/image3.jpg" class="d-block w-100" alt="Temple">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="images/waad.jpg" class="d-block w-100" alt="TempleMarket" style="height: 370px; object-fit: cover;">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center" style="top: 0; bottom: 0;">
                     <h5>Historical Temples</h5>
-                    <p>Experience the spiritual landmarks.</p>
+                    <p>ดื่มด่ำกับความสงบและศรัทธาในสถานที่แห่งจิตวิญญาณ</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/taladd.jpg" class="d-block w-100" alt="Market" style="height: 370px; object-fit: cover;">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center" style="top: 0; bottom: 0;">
+                    <h5>Vibrant Markets</h5>
+                    <p>ค้นพบเสน่ห์ของวัฒนธรรมท้องถิ่นและลิ้มรสอาหารอันแสนอร่อย</p>
                 </div>
             </div>
         </div>
@@ -58,19 +62,85 @@
             <span class="carousel-control-next-icon"></span>
         </button>
     </div>
+
+    <!-- Grid Section -->
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
     <div class="container my-5">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
             <div class="col">
                 <div class="card">
-                    <img src="images/place1.jpg" class="card-img-top" alt="Place 1">
+                    <img src="images/bangsaen.jpeg" class="card-img-top" alt="ทะเลบางแสน">
                     <div class="card-body">
-                        <h5 class="card-title">Pattaya Beach</h5>
+                        <h5 class="card-title">บางแสน</h5>
                     </div>
                 </div>
             </div>
-            <!-- เพิ่มการ์ดอีก 7 ใบ -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/pattaya.jpg" class="card-img-top" alt="ทะเลพัทยา">
+                    <div class="card-body">
+                        <h5 class="card-title">พัทยา</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/sichang.jpg" class="card-img-top" alt="เกาะสีชัง">
+                    <div class="card-body">
+                        <h5 class="card-title">เกาะสีชัง</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/toshin.jpg" class="card-img-top" alt="ตลาดโตชิน">
+                    <div class="card-body">
+                        <h5 class="card-title">ตลาดโตชิน</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/aqubuu.jpg" class="card-img-top" alt="อควาเรียม">
+                    <div class="card-body">
+                        <h5 class="card-title">พิพิธภัณฑ์สัตว์น้ำบูรพา</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/Khao.jpg" class="card-img-top" alt="สวนสัตว์">
+                    <div class="card-body">
+                        <h5 class="card-title">สวนสัตว์เปิดเขาเขียว</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/wad.jpg" class="card-img-top" alt="วัด">
+                    <div class="card-body">
+                        <h5 class="card-title">วัดแสนสุขวิสุทธิวราราม</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/wadd.jpg" class="card-img-top" alt="วัด">
+                    <div class="card-body">
+                        <h5 class="card-title">วัดเขาตะแบก</h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Contact Form Modal -->
     <div class="modal fade" id="contactModal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -94,18 +164,44 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
     <footer class="bg-light text-center text-lg-start">
         <div class="container p-4">
             <div class="row">
-                <div class="col-lg-6 col-md-12 mb-4">
+                <!-- Contact Information -->
+                <div class="col-lg-4 col-md-6 mb-4">
                     <h5>Contact Information</h5>
-                    <p>123 Chonburi Road, Chonburi, Thailand</p>
+                    <p>Email: info@chonburitravelguide.com</p>
+                    <p>Phone: +66 123 456 789</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#!" class="text-dark">Privacy Policy</a></li>
+                        <li><a href="#!" class="text-dark">Terms of Service</a></li>
+                        <li><a href="#!" class="text-dark">Support</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media Links -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-dark me-4"><i class="fab fa-facebook"></i>Facebook</a><br>
+                    <a href="#" class="text-dark me-4"><i class="fab fa-twitter"></i>Twitter</a><br>
+                    <a href="#" class="text-dark me-4"><i class="fab fa-instagram"></i>Instagram</a><br>
                 </div>
             </div>
         </div>
         <div class="text-center p-3 bg-dark text-light">
-            © 2024 Chonburi Travel Guide
+            © 2024 Chonburi TravelGuide
         </div>
-    </footer>                   
+    </footer>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
